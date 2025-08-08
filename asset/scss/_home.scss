@@ -104,6 +104,17 @@
         }
     }
     
+    .inverntory-cards {
+        .invertory-card {
+            background-color: #db2d2e;
+            display: inline-block;
+            padding: 30px 30px 120px;
+            h5 {}
+            p {}
+            a {}
+        }
+    }
+    
     @media(min-width:768px) and (max-width:992px) {
         .slider-section {
             height: auto;

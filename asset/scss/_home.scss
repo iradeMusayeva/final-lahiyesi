@@ -1,0 +1,216 @@
+    body>section {
+        padding: 120px 0px;
+    }
+    
+    .slider-section {
+        background-color: #d12b2b;
+        height: 90vh;
+        padding: 100px 0px;
+        .slider-card {
+            .slider-content {
+                color: white;
+                h2 {
+                    font-size: 50px;
+                    font-weight: 400;
+                    font-family: "Open Sans", sans-serif;
+                }
+                h3 {
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                a {
+                    display: inline-block;
+                    overflow: hidden;
+                    color: #db2d2e;
+                    padding: 12px 20px;
+                    font-size: 14px;
+                    background-color: white;
+                    position: relative;
+                    z-index: 1;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        bottom: -100px;
+                        right: 0;
+                        background-color: #323232;
+                        z-index: -1;
+                        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+                    &:hover::after {
+                        bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .slider2-section {
+        background-color: #d12b2b;
+        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/revolution/assets/ec93e-bg2.jpg");
+        height: 90vh;
+        padding: 100px 0px;
+        .slider-card {
+            .slider-content {
+                text-align: right;
+                color: white;
+                h2 {
+                    font-size: 50px;
+                    font-weight: 400;
+                    font-family: "Open Sans", sans-serif;
+                }
+                h3 {
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                a {
+                    color: white;
+                    padding: 12px 20px;
+                    font-size: 14px;
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    z-index: 1;
+                    background-color: #db2d2e;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        bottom: -100px;
+                        right: 0;
+                        background-color: #323232;
+                        z-index: -1;
+                        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+                    &:hover::after {
+                        bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(min-width:768px) and (max-width:992px) {
+        .slider-section {
+            height: auto;
+            .container {
+                width: 98%;
+                .slider-card {
+                    .slider-img {
+                        width: 623px;
+                        height: 381px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    p {
+                        width: 60%;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .slider2-section {
+            height: auto;
+            .container {
+                width: 98%;
+                .slider-card {
+                    .slider2-img {
+                        width: 923px;
+                        height: 418px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(min-width:567px) and (max-width:768px) {
+        .slider-section {
+            height: auto;
+            .container {
+                width: 98%;
+                .slider-card {
+                    .slider-img {
+                        width: 681px;
+                        height: 324px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h2 {
+                        font-size: 35px;
+                        font-weight: 400;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    h3 {
+                        font-weight: 400;
+                        margin-bottom: 16px;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    p {
+                        width: 70%;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .slider2-section {
+            height: auto;
+            .container {
+                width: 98%;
+                .slider-card {
+                    .slider2-img {
+                        width: 681px;
+                        height: 324px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h2 {
+                        font-size: 35px;
+                        font-weight: 400;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    h3 {
+                        font-weight: 400;
+                        margin-bottom: 16px;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    p {
+                        text-align: right;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:576px) {
+        .slider-section {
+            display: none;
+        }
+        .slider2-section {
+            display: none;
+        }
+    }

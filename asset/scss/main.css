@@ -375,8 +375,6 @@ body > section {
   right: 43%;
 }
 .arrival-section .container .arrival .arrival-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 .arrival-section .container .arrival .arrival-cards .arrival-card {
@@ -581,10 +579,17 @@ body > section {
     width: 98%;
   }
   .arrival-section .container .arrival .arrival-cards {
-    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
   }
   .arrival-section .container .arrival .arrival-cards .arrival-card {
     margin-bottom: 150px;
+  }
+  .arrival-section .container .arrival .arrival-cards .arrival-card .acard-img {
+    width: 400px;
+    height: 300px;
+  }
+  .arrival-section .container .arrival .arrival-cards .arrival-card .acard-content {
+    width: 400px;
   }
 }
 @media (max-width: 576px) {
@@ -616,8 +621,8 @@ body > section {
     margin: 0 auto;
   }
   .arrival-cards .arrival-card .acard-img {
-    width: 300px !important;
-    height: 288px !important;
+    width: 100% !important;
+    height: 397px !important;
   }
   .arrival-cards .arrival-card .acard-img img {
     width: 100%;

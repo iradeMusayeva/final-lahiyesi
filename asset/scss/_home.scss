@@ -1,611 +1,459 @@
-        body>section {
-            padding: 120px 0px;
-        }
-        
-        .sticy {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            z-index: 999;
-        }
-        
-        .slider-section {
-            background-color: #d12b2b;
-            height: 90vh;
-            padding: 100px 0px;
-            .slider-card {
-                .slider-content {
-                    color: white;
-                    h2 {
-                        font-size: 50px;
-                        font-weight: 400;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    h3 {
-                        font-weight: 400;
-                        margin-bottom: 20px;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 30px;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    a {
-                        display: inline-block;
-                        overflow: hidden;
-                        color: #db2d2e;
-                        padding: 12px 20px;
-                        font-size: 14px;
-                        background-color: white;
-                        position: relative;
-                        z-index: 1;
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            bottom: -100px;
-                            right: 0;
-                            background-color: #323232;
-                            z-index: -1;
-                            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-                        }
-                        &:hover::after {
-                            bottom: 0px;
-                        }
-                    }
-                }
+$muted: #7a7f87;
+$heading: #1f2428;
+$inactive: #6c757d;
+$accent: #e03c31;
+$overlay: rgba(224, 60, 49, .92);
+body>section {
+    padding: 120px 0px;
+}
+
+.sticy {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.slider-section {
+    background-color: #d12b2b;
+    height: 90vh;
+    padding: 100px 0px;
+    .slider-card {
+        .slider-content {
+            color: white;
+            h2 {
+                font-size: 50px;
+                font-weight: 400;
+                font-family: "Open Sans", sans-serif;
             }
-        }
-        
-        .slider2-section {
-            background-color: #d12b2b;
-            background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/revolution/assets/ec93e-bg2.jpg");
-            height: 90vh;
-            padding: 100px 0px;
-            .slider-card {
-                .slider-content {
-                    text-align: right;
-                    color: white;
-                    h2 {
-                        font-size: 50px;
-                        font-weight: 400;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    h3 {
-                        font-weight: 400;
-                        margin-bottom: 20px;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 30px;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    a {
-                        color: white;
-                        padding: 12px 20px;
-                        font-size: 14px;
-                        position: relative;
-                        display: inline-block;
-                        overflow: hidden;
-                        z-index: 1;
-                        background-color: #db2d2e;
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            bottom: -100px;
-                            right: 0;
-                            background-color: #323232;
-                            z-index: -1;
-                            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-                        }
-                        &:hover::after {
-                            bottom: 0px;
-                        }
-                    }
-                }
+            h3 {
+                font-weight: 400;
+                margin-bottom: 20px;
+                font-family: "Open Sans", sans-serif;
             }
-        }
-        
-        .inventory-cards {
-            .inventory-card {
+            p {
+                font-size: 14px;
+                margin-bottom: 30px;
+                font-family: "Open Sans", sans-serif;
+            }
+            a {
                 display: inline-block;
-                padding: 30px 30px 120px;
+                overflow: hidden;
+                color: #db2d2e;
+                padding: 12px 20px;
+                font-size: 14px;
+                background-color: white;
+                position: relative;
+                z-index: 1;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: -100px;
+                    right: 0;
+                    background-color: #323232;
+                    z-index: -1;
+                    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.slider2-section {
+    background-color: #d12b2b;
+    background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/revolution/assets/ec93e-bg2.jpg");
+    height: 90vh;
+    padding: 100px 0px;
+    .slider-card {
+        .slider-content {
+            text-align: right;
+            color: white;
+            h2 {
+                font-size: 50px;
+                font-weight: 400;
+                font-family: "Open Sans", sans-serif;
+            }
+            h3 {
+                font-weight: 400;
+                margin-bottom: 20px;
+                font-family: "Open Sans", sans-serif;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 30px;
+                font-family: "Open Sans", sans-serif;
+            }
+            a {
                 color: white;
+                padding: 12px 20px;
+                font-size: 14px;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                z-index: 1;
+                background-color: #db2d2e;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: -100px;
+                    right: 0;
+                    background-color: #323232;
+                    z-index: -1;
+                    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.inventory-cards {
+    .inventory-card {
+        display: inline-block;
+        padding: 30px 30px 120px;
+        color: white;
+        h5 {
+            font-weight: 800;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        a {
+            color: white;
+            font-size: 14px;
+            background-color: #d12b2b;
+            display: inline-block;
+            padding: 6px 16px;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: -100px;
+                right: 0;
+                background-color: #323232;
+                z-index: -3;
+                transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            &:hover::after {
+                bottom: 0px;
+            }
+        }
+        &:nth-child(1) {
+            background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/15.jpg") center center/cover no-repeat;
+            height: auto;
+        }
+        &:nth-of-type(2) {
+            background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/16.jpg") center center/cover no-repeat;
+            height: auto;
+        }
+        &:nth-of-type(3) {
+            background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/17.jpg") center center/cover no-repeat;
+            height: auto;
+        }
+    }
+}
+
+.cars-section {
+    position: relative !important;
+    .cars {
+        margin: 0 auto;
+        .cars-headings {
+            .cars-heading {
+                text-align: right;
+                margin-bottom: 80px;
+                i {
+                    color: #db2d2dd0;
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
                 h5 {
                     font-weight: 800;
-                    font-size: 18px;
                     text-transform: uppercase;
-                    margin-bottom: 8px;
+                    font-size: 18px;
+                    color: #363636;
                 }
                 p {
-                    font-size: 14px;
-                    margin-bottom: 16px;
+                    color: #999999;
+                    font-size: 12px;
                 }
-                a {
-                    color: white;
-                    font-size: 14px;
-                    background-color: #d12b2b;
-                    display: inline-block;
-                    padding: 6px 16px;
-                    position: relative;
-                    overflow: hidden;
-                    z-index: 2;
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        bottom: -100px;
-                        right: 0;
-                        background-color: #323232;
-                        z-index: -3;
-                        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    }
-                    &:hover::after {
-                        bottom: 0px;
-                    }
-                }
-                &:nth-child(1) {
-                    background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/15.jpg") center center/cover no-repeat;
-                    height: auto;
-                }
-                &:nth-of-type(2) {
-                    background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/16.jpg") center center/cover no-repeat;
-                    height: auto;
-                }
-                &:nth-of-type(3) {
-                    background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/17.jpg") center center/cover no-repeat;
-                    height: auto;
+            }
+            &:nth-child(3) {
+                .cars-heading {
+                    text-align: left;
                 }
             }
         }
-        
-        .cars-section {
-            position: relative !important;
-            .cars {
-                margin: 0 auto;
-                .cars-headings {
-                    .cars-heading {
-                        text-align: right;
-                        margin-bottom: 80px;
-                        i {
-                            color: #db2d2dd0;
-                            font-size: 40px;
-                            margin-bottom: 10px;
-                        }
-                        h5 {
-                            font-weight: 800;
-                            text-transform: uppercase;
-                            font-size: 18px;
-                            color: #363636;
-                        }
-                        p {
-                            color: #999999;
-                            font-size: 12px;
-                        }
-                    }
-                    &:nth-child(3) {
-                        .cars-heading {
-                            text-align: left;
-                        }
-                    }
-                }
-                .cars-img {
-                    width: 390px;
-                    height: 745px;
-                    transition: 0.4s all;
-                    img {
+        .cars-img {
+            width: 390px;
+            height: 745px;
+            transition: 0.4s all;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                transform: translateY(-30px);
+            }
+        }
+    }
+    .look-car-section {
+        padding: 0px 0px;
+        position: absolute;
+        bottom: -90px;
+        .look-cars {
+            .look-car {
+                background-color: #d12b2b;
+                padding: 40px 40px 0px;
+                &:first-of-type {
+                    position: relative;
+                    background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/bg/02.jpg")center left;
+                    background-attachment: fixed;
+                    z-index: 1;
+                    &:after {
+                        position: absolute;
+                        content: "";
                         width: 100%;
                         height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.582);
+                        z-index: -1;
                     }
-                    &:hover {
-                        transform: translateY(-30px);
+                }
+                &:nth-of-type(2) .lcar-content a {
+                    background-color: white;
+                    color: #d12b2b;
+                }
+                .lcar-content {
+                    color: white;
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    a {
+                        display: inline-block;
+                        padding: 8px 20px;
+                        background-color: #d12b2b;
+                        color: white;
+                        text-transform: capitalize;
                     }
                 }
             }
-            .look-car-section {
-                padding: 0px 0px;
-                position: absolute;
-                bottom: -90px;
-                .look-cars {
-                    .look-car {
+        }
+    }
+}
+
+.arrival-section {
+    background-color: #f6f6f6;
+    margin-top: 80px;
+    padding: 80px 0px;
+    .container {
+        width: 90%;
+        .arrival {
+            .arrival-heading {
+                padding: 0px 0px 50px 0px;
+                text-align: center;
+                span {
+                    font-size: 14px;
+                    color: #999999;
+                }
+                h2 {
+                    font-size: 36px;
+                    color: #363636;
+                    text-transform: uppercase;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        width: 15%;
+                        height: 2px;
+                        bottom: -7px;
+                        right: 43%;
                         background-color: #d12b2b;
-                        padding: 40px 40px 0px;
-                        &:first-of-type {
+                        transition: 0.4s all;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 10%;
+                        height: 2px;
+                        bottom: -15px;
+                        right: 45%;
+                        background-color: #d12b2b;
+                        transition: 0.4s all;
+                    }
+                    &:hover:after {
+                        width: 10%;
+                        right: 45%;
+                    }
+                    &:hover::before {
+                        width: 15%;
+                        right: 43%;
+                    }
+                }
+            }
+            .arrival-cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+                .arrival-card {
+                    margin: 0;
+                    .acard-img {
+                        padding: 10px;
+                        height: 100%;
+                        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/01.jpg") center center/cover no-repeat;
+                    }
+                    .acard-content {
+                        background-color: white;
+                        padding: 20px;
+                        text-align: center;
+                        .star {
+                            color: #999999;
+                            margin: 10px 0px;
+                        }
+                        a {
+                            display: inline-block;
+                            font-size: 18px;
+                            color: #d12b2b;
+                            font-weight: 700;
+                            margin-bottom: 20px;
+                            text-transform: capitalize;
                             position: relative;
-                            background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/bg/02.jpg")center left;
-                            background-attachment: fixed;
                             z-index: 1;
                             &:after {
                                 position: absolute;
                                 content: "";
-                                width: 100%;
-                                height: 100%;
-                                top: 0;
-                                left: 0;
-                                background-color: rgba(0, 0, 0, 0.582);
-                                z-index: -1;
-                            }
-                        }
-                        &:nth-of-type(2) .lcar-content a {
-                            background-color: white;
-                            color: #d12b2b;
-                        }
-                        .lcar-content {
-                            color: white;
-                            h5 {
-                                font-size: 18px;
-                                font-weight: 700;
-                                text-transform: uppercase;
-                            }
-                            p {
-                                font-size: 14px;
-                            }
-                            a {
-                                display: inline-block;
-                                padding: 8px 20px;
-                                background-color: #d12b2b;
-                                color: white;
-                                text-transform: capitalize;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-        .arrival-section {
-            background-color: #f6f6f6;
-            margin-top: 80px;
-            padding: 80px 0px;
-            .container {
-                width: 90%;
-                .arrival {
-                    .arrival-heading {
-                        padding: 0px 0px 50px 0px;
-                        text-align: center;
-                        span {
-                            font-size: 14px;
-                            color: #999999;
-                        }
-                        h2 {
-                            font-size: 36px;
-                            color: #363636;
-                            text-transform: uppercase;
-                            position: relative;
-                            &:after {
-                                position: absolute;
-                                content: "";
-                                width: 15%;
+                                width: 80%;
                                 height: 2px;
                                 bottom: -7px;
-                                right: 43%;
+                                right: 10%;
                                 background-color: #d12b2b;
                                 transition: 0.4s all;
                             }
                             &::before {
                                 position: absolute;
                                 content: "";
-                                width: 10%;
+                                width: 50%;
                                 height: 2px;
                                 bottom: -15px;
-                                right: 45%;
+                                right: 25%;
                                 background-color: #d12b2b;
                                 transition: 0.4s all;
                             }
-                            &:hover:after {
-                                width: 10%;
-                                right: 45%;
-                            }
-                            &:hover::before {
-                                width: 15%;
-                                right: 43%;
-                            }
+                        }
+                        &:hover a:after {
+                            width: 50%;
+                            right: 25%;
+                        }
+                        &:hover a::before {
+                            width: 80%;
+                            right: 10%;
+                        }
+                        .old-price {
+                            color: rgb(153, 153, 153);
+                            padding-right: 5px;
+                            font-size: 13px;
+                            font-weight: 400;
+                            text-decoration: line-through;
+                        }
+                        .new-price {
+                            color: rgb(54, 54, 54);
+                            font-weight: 700;
+                            font-size: 18px;
                         }
                     }
-                    .arrival-cards {
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        gap: 30px;
-                        .arrival-card {
-                            margin: 0;
-                            .acard-img {
-                                padding: 10px;
-                                height: 100%;
-                                background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/01.jpg") center center/cover no-repeat;
-                            }
-                            .acard-content {
-                                background-color: white;
-                                padding: 20px;
-                                text-align: center;
-                                .star {
-                                    color: #999999;
-                                    margin: 10px 0px;
-                                }
-                                a {
-                                    display: inline-block;
-                                    font-size: 18px;
-                                    color: #d12b2b;
-                                    font-weight: 700;
-                                    margin-bottom: 20px;
-                                    text-transform: capitalize;
-                                    position: relative;
-                                    z-index: 1;
-                                    &:after {
-                                        position: absolute;
-                                        content: "";
-                                        width: 80%;
-                                        height: 2px;
-                                        bottom: -7px;
-                                        right: 10%;
-                                        background-color: #d12b2b;
-                                        transition: 0.4s all;
-                                    }
-                                    &::before {
-                                        position: absolute;
-                                        content: "";
-                                        width: 50%;
-                                        height: 2px;
-                                        bottom: -15px;
-                                        right: 25%;
-                                        background-color: #d12b2b;
-                                        transition: 0.4s all;
-                                    }
-                                }
-                                &:hover a:after {
-                                    width: 50%;
-                                    right: 25%;
-                                }
-                                &:hover a::before {
-                                    width: 80%;
-                                    right: 10%;
-                                }
-                                .old-price {
-                                    color: rgb(153, 153, 153);
-                                    padding-right: 5px;
-                                    font-size: 13px;
-                                    font-weight: 400;
-                                    text-decoration: line-through;
-                                }
-                                .new-price {
-                                    color: rgb(54, 54, 54);
-                                    font-weight: 700;
-                                    font-size: 18px;
-                                }
-                            }
-                            &:nth-of-type(2) .acard-img {
-                                background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/02.jpg") center center/cover no-repeat;
-                            }
-                            &:nth-of-type(3) .acard-img {
-                                background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/03.jpg") center center/cover no-repeat;
-                            }
-                            &:nth-of-type(4) .acard-img {
-                                background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/04.jpg") center center/cover no-repeat;
-                            }
-                        }
+                    &:nth-of-type(2) .acard-img {
+                        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/02.jpg") center center/cover no-repeat;
+                    }
+                    &:nth-of-type(3) .acard-img {
+                        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/03.jpg") center center/cover no-repeat;
+                    }
+                    &:nth-of-type(4) .acard-img {
+                        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/car/04.jpg") center center/cover no-repeat;
                     }
                 }
             }
         }
-        
-        @media(min-width:768px) and (max-width:992px) {
-            .slider-section {
-                height: auto;
-                .container {
-                    width: 98%;
-                    .slider-card {
-                        .slider-img {
-                            width: 623px;
-                            height: 381px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        p {
-                            width: 60%;
-                            font-size: 10px;
-                        }
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .slider-section {
+        height: auto;
+        .container {
+            width: 98%;
+            .slider-card {
+                .slider-img {
+                    width: 623px;
+                    height: 381px;
+                    img {
+                        width: 100%;
+                        height: 100%;
                     }
+                }
+                p {
+                    width: 60%;
+                    font-size: 10px;
                 }
             }
-            .slider2-section {
-                height: auto;
-                .container {
-                    width: 98%;
-                    .slider-card {
-                        .slider2-img {
-                            width: 923px;
-                            height: 418px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-            .cars-section {
-                .container {
-                    width: 98%;
-                    .cars {
-                        .cars-img {}
-                        .cars-headings {
-                            .cars-heading {
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-                .look-car-section {
-                    .look-cars {
-                        .look-car {
-                            .lcar-img {
-                                margin: 40px 0px;
-                                width: 189px;
-                                height: 150px;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                        }
+        }
+    }
+    .slider2-section {
+        height: auto;
+        .container {
+            width: 98%;
+            .slider-card {
+                .slider2-img {
+                    width: 923px;
+                    height: 418px;
+                    img {
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }
         }
-        
-        @media(min-width:567px) and (max-width:768px) {
-            .slider-section {
-                height: auto;
-                .container {
-                    width: 98%;
-                    .slider-card {
-                        .slider-img {
-                            width: 681px;
-                            height: 324px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        h2 {
-                            font-size: 35px;
-                            font-weight: 400;
-                            font-family: "Open Sans", sans-serif;
-                        }
-                        h3 {
-                            font-weight: 400;
-                            margin-bottom: 16px;
-                            font-family: "Open Sans", sans-serif;
-                        }
-                        p {
-                            width: 70%;
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-            .slider2-section {
-                height: auto;
-                .container {
-                    width: 98%;
-                    .slider-card {
-                        .slider2-img {
-                            width: 681px;
-                            height: 324px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        h2 {
-                            font-size: 35px;
-                            font-weight: 400;
-                            font-family: "Open Sans", sans-serif;
-                        }
-                        h3 {
-                            font-weight: 400;
-                            margin-bottom: 16px;
-                            font-family: "Open Sans", sans-serif;
-                        }
-                        p {
-                            text-align: right;
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-            .cars-section {
-                .container {
-                    width: 98%;
-                    .cars {
-                        .cars-img {
-                            display: none;
-                        }
-                        .cars-headings {
-                            .cars-heading {
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-                .look-car-section {
-                    .look-cars {
-                        .look-car {
-                            padding: 55px 40px;
-                            .lcar-img {
-                                img {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .arrival-section {
-                .container {
-                    width: 98%;
-                    .arrival {
-                        .arrival-cards {
-                            grid-template-columns: repeat(2, 1fr);
-                            .arrival-card {
-                                margin-bottom: 150px;
-                            }
-                        }
+    }
+    .cars-section {
+        .container {
+            width: 98%;
+            .cars {
+                .cars-img {}
+                .cars-headings {
+                    .cars-heading {
+                        text-align: left;
                     }
                 }
             }
         }
-        
-        @media (max-width:576px) {
-            .slider-section {
-                display: none;
-            }
-            .slider2-section {
-                display: none;
-            }
-            .cars-section {
-                .container {
-                    width: 98%;
-                    .cars {
-                        .cars-img {
-                            display: none;
-                        }
-                        .cars-headings {
-                            .cars-heading {
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-                .look-car-section {
-                    .look-cars {
-                        .look-car {
-                            padding: 55px 40px;
-                            &:first-of-type {
-                                background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/bg/02.jpg")center center/cover;
-                            }
-                            .lcar-img {
-                                img {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .arrival-cards {
-                .arrival-card {
-                    margin: 0 auto;
-                    .acard-img {
-                        width: 300px !important;
-                        height: 288px !important;
+        .look-car-section {
+            .look-cars {
+                .look-car {
+                    .lcar-img {
+                        margin: 40px 0px;
+                        width: 189px;
+                        height: 150px;
                         img {
                             width: 100%;
                             height: 100%;
@@ -614,3 +462,160 @@
                 }
             }
         }
+    }
+}
+
+@media(min-width:567px) and (max-width:768px) {
+    .slider-section {
+        height: auto;
+        .container {
+            width: 98%;
+            .slider-card {
+                .slider-img {
+                    width: 681px;
+                    height: 324px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h2 {
+                    font-size: 35px;
+                    font-weight: 400;
+                    font-family: "Open Sans", sans-serif;
+                }
+                h3 {
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                p {
+                    width: 70%;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .slider2-section {
+        height: auto;
+        .container {
+            width: 98%;
+            .slider-card {
+                .slider2-img {
+                    width: 681px;
+                    height: 324px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h2 {
+                    font-size: 35px;
+                    font-weight: 400;
+                    font-family: "Open Sans", sans-serif;
+                }
+                h3 {
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    font-family: "Open Sans", sans-serif;
+                }
+                p {
+                    text-align: right;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .cars-section {
+        .container {
+            width: 98%;
+            .cars {
+                .cars-img {
+                    display: none;
+                }
+                .cars-headings {
+                    .cars-heading {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .look-car-section {
+            .look-cars {
+                .look-car {
+                    padding: 55px 40px;
+                    .lcar-img {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .arrival-section {
+        .container {
+            width: 98%;
+            .arrival {
+                .arrival-cards {
+                    grid-template-columns: repeat(2, 1fr);
+                    .arrival-card {
+                        margin-bottom: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .slider-section {
+        display: none;
+    }
+    .slider2-section {
+        display: none;
+    }
+    .cars-section {
+        .container {
+            width: 98%;
+            .cars {
+                .cars-img {
+                    display: none;
+                }
+                .cars-headings {
+                    .cars-heading {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .look-car-section {
+            .look-cars {
+                .look-car {
+                    padding: 55px 40px;
+                    &:first-of-type {
+                        background: url("https://themes.potenzaglobalsolutions.com/html/cardealer/images/bg/02.jpg")center center/cover;
+                    }
+                    .lcar-img {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .arrival-cards {
+        .arrival-card {
+            margin: 0 auto;
+            .acard-img {
+                width: 300px !important;
+                height: 288px !important;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

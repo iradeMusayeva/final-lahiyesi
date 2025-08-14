@@ -374,9 +374,6 @@ body > section {
   width: 15%;
   right: 43%;
 }
-.arrival-section .container .arrival .arrival-cards {
-  gap: 30px;
-}
 .arrival-section .container .arrival .arrival-cards .arrival-card {
   margin: 0;
 }

@@ -621,11 +621,10 @@ body > section {
     margin: 0 auto;
   }
   .arrival-cards .arrival-card .acard-img {
-    width: 100% !important;
+    width: 500px !important;
     height: 397px !important;
   }
-  .arrival-cards .arrival-card .acard-img img {
-    width: 100%;
-    height: 100%;
+  .arrival-cards .arrival-card .acard-content {
+    width: 500px !important;
   }
 }/*# sourceMappingURL=main.css.map */

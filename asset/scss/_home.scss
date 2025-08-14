@@ -614,12 +614,11 @@ body>section {
         .arrival-card {
             margin: 0 auto;
             .acard-img {
-                width: 100% !important;
+                width: 500px !important;
                 height: 397px !important;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+            }
+            .acard-content {
+                width: 500px !important;
             }
         }
     }
